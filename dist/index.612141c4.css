@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  text-decoration: none;
+}
+
+.header {
+  height: 75px;
+  background-color: #000;
+}
+
+.header__logo {
+  width: 200px;
+  margin: 5px auto 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=index.612141c4.css.map */

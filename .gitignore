@@ -1,0 +1,5 @@
+# Se ignora la carpeta de node_modules
+node_modules
+
+# Se ignora la cache de Parcel
+.*/
