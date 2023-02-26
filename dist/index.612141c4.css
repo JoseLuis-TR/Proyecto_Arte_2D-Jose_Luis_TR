@@ -1,22 +1,187 @@
+@import "https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap";
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Mulish, sans-serif;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-size: 62.5%;
   text-decoration: none;
+  list-style-type: none;
 }
 
-.header {
-  height: 75px;
+.indexContainer {
+  width: 100%;
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+}
+
+.indexContainer .seccion {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.indexContainer .seccion__backgroundVideo {
+  height: 110vh;
+  filter: blur(5px);
+}
+
+.inicio__info {
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background-color: #0006;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+}
+
+.inicio__info__descripcion {
+  width: 70%;
+  filter: drop-shadow(5px 5px .2rem #000);
+  margin-top: 20rem;
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.inicio__info__catch {
+  width: 50%;
+  filter: drop-shadow(5px 5px .2rem #000);
+  margin-top: 5rem;
+  font-size: 4.5rem;
+  font-weight: 500;
+}
+
+.inicio__info__logo {
+  width: 400px;
+  filter: drop-shadow(10px 10px .2rem #000);
+  margin-top: auto;
+  margin-bottom: 10rem;
+}
+
+.personajes__info {
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background-color: #0006;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 7rem;
+  display: flex;
+  position: absolute;
+}
+
+.personajes__info__tabs {
+  width: 90%;
+  max-width: 120em;
+  background-color: #ff0;
+  padding: 1em;
+}
+
+.personajes__info__tabs__botones {
+  width: 100%;
+  background-color: violet;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+}
+
+.personajes__info__tabs__botones--boton {
+  cursor: pointer;
+  background-color: #7fffd4;
+  margin: 0 1em 0 0;
+  padding: 1em;
+  font-size: 4rem;
+  transition: all .5s;
+}
+
+.personajes__info__tabs__pestanias {
+  min-height: 10vh;
+  background-color: #5f9ea0;
+  position: relative;
+}
+
+.personajes__info__tabs__pestanias--pestania {
+  opacity: 0;
+  background-color: #deb887;
+  margin: 1em;
+  padding: 1em;
+  transition: all .5s;
+  position: absolute;
+  top: 0;
+}
+
+.button_active {
   background-color: #000;
 }
 
-.header__logo {
-  width: 200px;
-  margin: 5px auto 0;
+.tab_active {
+  opacity: 1;
+}
+
+.seccion__carrusel {
+  width: 90%;
+  max-width: 120em;
+  background-color: #add8e6;
+  font-size: 4rem;
   position: absolute;
-  left: 0;
-  right: 0;
+}
+
+.seccion__carrusel__imagenes {
+  width: 300%;
+  background-color: orange;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  transition: all .5s;
+  display: flex;
+  transform: translateX(0%);
+}
+
+.seccion__carrusel__imagenes--item {
+  width: calc(33.3333% - 2em);
+  min-height: 10vh;
+  background-color: #0f0;
+}
+
+.seccion__carrusel__indicadores {
+  width: 100%;
+  background-color: red;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0 0;
+  padding: .4em;
+  display: flex;
+}
+
+.seccion__carrusel__indicadores--item {
+  width: 2em;
+  height: 2em;
+  background-color: #00f;
+  margin: .2em;
+}
+
+.punto-activo {
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=index.612141c4.css.map */

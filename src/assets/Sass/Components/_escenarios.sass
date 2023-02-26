@@ -1,0 +1,38 @@
+.seccion__carrusel
+    width: 90%
+    max-width: 120em
+    background-color: lightblue
+    font-size: 4rem
+    position: absolute
+    &__imagenes
+        width: 300%
+        background-color: orange
+        display: flex
+        justify-content: space-between
+        flex-flow: row nowrap
+        align-items: center
+        padding: 1em
+        transition: all .5s ease
+        transform: translateX(0%)
+        &--item
+            width: calc(100% / 3 - 2em)
+            background-color: lime
+            min-height: 10vh
+
+    &__indicadores
+        width: 100%
+        background-color: red
+        padding: .4em
+        display: flex
+        flex-flow: row nowrap
+        justify-content: center
+        align-items: center
+        margin: 1em 0 0
+        &--item
+            width: 2em
+            height: 2em
+            background-color: blue
+            margin: .2em
+
+.punto-activo
+    background-color: white
