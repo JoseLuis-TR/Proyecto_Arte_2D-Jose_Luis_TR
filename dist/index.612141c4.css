@@ -137,16 +137,16 @@ body {
 }
 
 .seccion__carrusel {
-  width: 90%;
-  max-width: 120em;
-  background-color: #add8e6;
+  width: 60%;
+  max-width: 1000px;
   font-size: 4rem;
   position: absolute;
+  overflow-x: hidden;
 }
 
 .seccion__carrusel__imagenes {
   width: 300%;
-  background-color: orange;
+  background-color: #ffffff80;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
@@ -158,17 +158,17 @@ body {
 
 .seccion__carrusel__imagenes--item {
   width: calc(33.3333% - 2em);
+  height: 100%;
   min-height: 10vh;
   background-color: #0f0;
 }
 
 .seccion__carrusel__indicadores {
   width: 100%;
-  background-color: red;
   flex-flow: row;
   justify-content: center;
   align-items: center;
-  margin: 1em 0 0;
+  margin: 0;
   padding: .4em;
   display: flex;
 }
@@ -177,6 +177,7 @@ body {
   width: 2em;
   height: 2em;
   background-color: #00f;
+  border-radius: 50%;
   margin: .2em;
 }
 

@@ -4,7 +4,7 @@ const indicador = document.querySelectorAll(".seccion__carrusel__indicadores--it
 indicador.forEach((item, index)=>{
     indicador[index].addEventListener("click", ()=>{
         let posicion = index;
-        let operacion = posicion * -33;
+        let operacion = posicion * -1 * (100 / 3);
         carrusel.style.transform = `translateX(${operacion}%)`;
         indicador.forEach((item, index)=>{
             indicador[index].classList.remove("punto-activo");
