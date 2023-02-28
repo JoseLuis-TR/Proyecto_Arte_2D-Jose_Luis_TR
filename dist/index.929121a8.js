@@ -1,6 +1,7 @@
 "use strict";
-const carrusel = document.querySelector(".seccion__carrusel__imagenes");
-const indicador = document.querySelectorAll(".seccion__carrusel__indicadores--item");
+const carrusel = document.querySelector(".escenarios__cuerpo__carrusel__imagenes");
+const indicador = document.querySelectorAll(".escenarios__cuerpo__carrusel__indicadores--item");
+console.log(indicador);
 indicador.forEach((item, index)=>{
     indicador[index].addEventListener("click", ()=>{
         let posicion = index;

@@ -15,8 +15,8 @@
                 <source src="assets/Videos/cueva-webm.webm">
             </video>
             <section class="inicio__info">
-                <p class="inicio__info__descripcion">Un tranquilo poblado de robots ve su paz
-                    destruida por culpa de un mal desconocido...</p>
+                <h1 class="inicio__info__descripcion">Un tranquilo poblado de robots ve su paz
+                    destruida por culpa de un mal desconocido...</h1>
                 <p class="inicio__info__catch">¡Conoce esta lluviosa historia!</p>
                 <img
                         class="inicio__info__logo"
@@ -30,59 +30,112 @@
             <video class="seccion__backgroundVideo" autoplay="autoplay" muted loop playsinline>
                 <source src="assets/Videos/media_cave.webm">
             </video>
-            <p></p>
-            <article class="seccion__carrusel">
-                <section class="seccion__carrusel__imagenes">
-                    <img
-                            class="seccion__carrusel__imagenes--item"
-                            srcset="assets/Imagenes/Escenario/escena_sin_boss_1080-optimizado.jpg"
-                            sizes="800px"
-                            src="assets/Imagenes/Escenario/escena_sin_boss_1080-optimizado.jpg"
-                            alt="Escenario 1">
-                    <img
-                            class="seccion__carrusel__imagenes--item"
-                            srcset="assets/Imagenes/Escenario/escena_sin_boss_1080-optimizado.jpg"
-                            sizes="800px"
-                            src="assets/Imagenes/Escenario/escena_sin_boss_1080-optimizado.jpg"
-                            alt="Escenario 1">
-                    <img
-                            class="seccion__carrusel__imagenes--item"
-                            srcset="assets/Imagenes/Escenario/escena_sin_boss_360-optimizado.jpg 400px,
-                                    assets/Imagenes/Escenario/escena_sin_boss_720-optimizado.jpg 600px,
-                                    assets/Imagenes/Escenario/escena_sin_boss_1080-optimizado.jpg 800px"
-                            sizes="(max-width: 400px) 400px,
+            <section class="escenarios__cuerpo">
+                <h2 class="escenarios__cuerpo__titulo">¡Explora diversas localizaciones!</h2>
+                <p class="escenarios__cuerpo__descripcion">Recorre junto al héroe de esta historia su trayecto para buscar
+                    la venganza y parar la perpetua lluvia a la que se ve su poblado obligado a sufrir.</p>
+                <article class="escenarios__cuerpo__carrusel">
+                    <section class="escenarios__cuerpo__carrusel__imagenes">
+                        <img
+                                class="escenarios__cuerpo__carrusel__imagenes--item"
+                                srcset="assets/Imagenes/Escenario/escenaInicial-360.png 400px,
+                                    assets/Imagenes/Escenario/escenaInicial-720.png 600px,
+                                    assets/Imagenes/Escenario/escenaInicial-1440.png 800px"
+                                sizes="(max-width: 400px) 400px,
                                     (max-width: 600px) 600px,
                                     800px"
-                            src="assets/Imagenes/Escenario/escena_sin_boss_1080-optimizado.jpg"
-                            alt="Escenario final">
-                </section>
-                <ul class="seccion__carrusel__indicadores">
-                    <li class="seccion__carrusel__indicadores--item punto-activo" ></li>
-                    <li class="seccion__carrusel__indicadores--item" ></li>
-                    <li class="seccion__carrusel__indicadores--item" ></li>
-                </ul>
-            </article>
+                                src="assets/Imagenes/Escenario/escenaInicial-720.png"
+                                alt="Escenario inicial del juego" />
+                        <img
+                                class="escenarios__cuerpo__carrusel__imagenes--item"
+                                srcset="assets/Imagenes/Escenario/escenaMedio-360.png 400px,
+                                    assets/Imagenes/Escenario/escenaMedio-720.png 600px,
+                                    assets/Imagenes/Escenario/escenaMedio-1080.png 800px"
+                                sizes="(max-width: 400px) 400px,
+                                    (max-width: 600px) 600px,
+                                    800px"
+                                src="assets/Imagenes/Escenario/escenaMedio-720.png"
+                                alt="Escenario del medio">
+                        <img
+                                class="escenarios__cuerpo__carrusel__imagenes--item"
+                                srcset="assets/Imagenes/Escenario/escenaFinal-360.jpg 400px,
+                                    assets/Imagenes/Escenario/escenaFinal-720.jpg 600px,
+                                    assets/Imagenes/Escenario/escenaFinal-1080.jpg 800px"
+                                sizes="(max-width: 400px) 400px,
+                                    (max-width: 600px) 600px,
+                                    800px"
+                                src="assets/Imagenes/Escenario/escenaFinal-720.jpg"
+                                alt="Escenario final">
+                    </section>
+                    <ul class="escenarios__cuerpo__carrusel__indicadores">
+                        <li class="escenarios__cuerpo__carrusel__indicadores--item punto-activo" ></li>
+                        <li class="escenarios__cuerpo__carrusel__indicadores--item" ></li>
+                        <li class="escenarios__cuerpo__carrusel__indicadores--item" ></li>
+                    </ul>
+                </article>
+            </section>
         </article>
         <article class="seccion personajes">
             <video class="seccion__backgroundVideo" autoplay="autoplay" muted loop playsinline>
                 <source src="assets/Videos/Vídeos_Tormenta_WEBM.webm">
             </video>
-            <!--<p class="personajes__info__descripcion" >Te presento a los personajes de nuestra húmeda historia</p>-->
             <section class="personajes__info">
+                <h2 class="personajes__info__descripcion" >Conoce a los personajes de nuestra lluviosa historia</h2>
                 <section class="personajes__info__tabs">
                     <ul class="personajes__info__tabs__botones">
                         <li class="personajes__info__tabs__botones--boton button_active">Héroe</li>
                         <li class="personajes__info__tabs__botones--boton">Villano</li>
                     </ul>
                     <article class="personajes__info__tabs__pestanias">
-                        <section class="personajes__info__tabs__pestanias--pestania tab_active tab_active" >
-                            Lorem ipsum dolor sit 1
+                        <section class="personajes__info__tabs__pestanias--pestania tab_active" >
+                            <img
+                                    class="personajes__info__tabs__pestanias--pestania--img"
+                                    srcset="assets/Imagenes/Personajes/heroe-270.png 300px,
+                                    assets/Imagenes/Personajes/heroe-540.png 600px,
+                                    assets/Imagenes/Personajes/heroe-1080.png 800px"
+                                    sizes="(max-width: 300px) 300px,
+                                    (max-width: 600px) 600px,
+                                    800px"
+                                    src="assets/Imagenes/Personajes/heroe-540.png"
+                                    alt="Héroe de la historia">
+                            <p
+                                    class="personajes__info__tabs__pestanias--pestania--info">
+                                El héroe de nuestra historia, un robot obligado a buscar la salvación de su pueblo.<br>
+                                Gracias a su paraguas pudo sobrevivir al óxido producido por la lluvia, pero no pudo evitar que su pueblo se viera afectado por ella.<br>
+                                Su misión es encontrar al culpable de la lluvia y pararle los pies.
+                            </p>
                         </section>
                         <section class="personajes__info__tabs__pestanias--pestania" >
-                            Lorem ipsum dolor sit 2
+                            <img
+                                    class="personajes__info__tabs__pestanias--pestania--img"
+                                    srcset="assets/Imagenes/Personajes/villano-256.png 300px,
+                                    assets/Imagenes/Personajes/villano-512.png 600px"
+                                    sizes="(max-width: 300px) 300px,
+                                    600px"
+                                    src="assets/Imagenes/Personajes/villano-512.png"
+                                    alt="Villano de la historia">
+                            <p
+                                    class="personajes__info__tabs__pestanias--pestania--info">
+                                El villano es un mago elemental que ha decidido castigar al poblado de los robots.<br>
+                                Para ello conjuró un hechizo que ha hecho que la lluvia no deje de caer.<br>
+                                El héroe de la historia es el único que puede pararle los pies.
+                            </p>
                         </section>
                     </article>
                 </section>
+            </section>
+        </article>
+        <article class="seccion final">
+            <section class="final__acordeon">
+                <!--<h2>¿Necesitas algo más de información?</h2>-->
+                <article class="final__acordeon__bloque">
+                    <h3 class="final__acordeon__bloque--titulo">Titular 1</h3>
+                    <p class="final__acordeon__bloque--descripcion">Texto 1</p>
+                </article>
+                <article class="final__acordeon__bloque">
+                    <h3 class="final__acordeon__bloque--titulo">Titular 2</h3>
+                    <p class="final__acordeon__bloque--descripcion">Texto 2</p>
+                </article>
             </section>
         </article>
     </main>

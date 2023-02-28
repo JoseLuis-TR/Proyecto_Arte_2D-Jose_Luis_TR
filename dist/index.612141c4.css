@@ -76,7 +76,6 @@ body {
 .personajes__info {
   height: 100vh;
   width: 100%;
-  color: #fff;
   text-align: center;
   background-color: #0006;
   flex-direction: column;
@@ -87,16 +86,20 @@ body {
   position: absolute;
 }
 
+.personajes__info__descripcion {
+  color: #fff;
+  filter: drop-shadow(5px 5px .2rem #000);
+  font-weight: 800;
+}
+
 .personajes__info__tabs {
   width: 90%;
-  max-width: 120em;
-  background-color: #ff0;
+  height: 50%;
   padding: 1em;
 }
 
 .personajes__info__tabs__botones {
   width: 100%;
-  background-color: violet;
   flex-flow: row;
   justify-content: space-evenly;
   align-items: center;
@@ -105,48 +108,115 @@ body {
 
 .personajes__info__tabs__botones--boton {
   cursor: pointer;
-  background-color: #7fffd4;
+  background-color: #fff;
+  border-radius: 10px;
   margin: 0 1em 0 0;
-  padding: 1em;
+  padding: .5em;
   font-size: 4rem;
+  font-weight: 800;
   transition: all .5s;
+}
+
+.personajes__info__tabs__botones--boton:hover {
+  background-color: #d38144;
 }
 
 .personajes__info__tabs__pestanias {
   min-height: 10vh;
-  background-color: #5f9ea0;
+  justify-content: center;
+  align-items: center;
+  padding: .5em;
+  display: flex;
   position: relative;
 }
 
 .personajes__info__tabs__pestanias--pestania {
+  width: -moz-fit-content;
+  width: fit-content;
   opacity: 0;
-  background-color: #deb887;
-  margin: 1em;
-  padding: 1em;
+  background-color: #3a3a3ab3;
+  border-radius: 10px;
+  grid-template: "imagen informacion" 1fr
+  / 1fr 1fr;
+  gap: 0;
+  margin-top: 2em;
+  padding: .5em;
   transition: all .5s;
+  display: grid;
   position: absolute;
   top: 0;
 }
 
+.personajes__info__tabs__pestanias--pestania--img {
+  width: 50%;
+  grid-area: imagen;
+  place-self: center;
+}
+
+.personajes__info__tabs__pestanias--pestania--info {
+  text-align: justify;
+  color: #fff;
+  align-self: center;
+  padding: .5em;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
 .button_active {
-  background-color: #000;
+  color: #fff;
+  background-color: #984d14;
+}
+
+.button_active:hover {
+  background-color: #703609;
 }
 
 .tab_active {
   opacity: 1;
 }
 
-.seccion__carrusel {
-  width: 60%;
-  max-width: 1000px;
-  font-size: 4rem;
+.escenarios__cuerpo {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   position: absolute;
+}
+
+.escenarios__cuerpo__titulo {
+  width: 150%;
+  color: #fff;
+  filter: drop-shadow(5px 5px .2rem #000);
+  text-align: center;
+  justify-content: center;
+  margin: 0 0 .5em;
+  font-size: 5rem;
+  font-weight: 800;
+  display: flex;
+  overflow: visible;
+}
+
+.escenarios__cuerpo__descripcion {
+  filter: drop-shadow(0 0 .5rem #000);
+  color: #fff;
+  text-align: center;
+  width: 60%;
+  margin: 0 0 1.5em;
+  font-size: 3rem;
+}
+
+.escenarios__cuerpo__carrusel {
+  width: 60%;
+  max-width: 900px;
+  font-size: 4rem;
   overflow-x: hidden;
 }
 
-.seccion__carrusel__imagenes {
+.escenarios__cuerpo__carrusel__imagenes {
   width: 300%;
-  background-color: #ffffff80;
+  background-color: #ffffff26;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
@@ -156,14 +226,15 @@ body {
   transform: translateX(0%);
 }
 
-.seccion__carrusel__imagenes--item {
+.escenarios__cuerpo__carrusel__imagenes--item {
   width: calc(33.3333% - 2em);
   height: 100%;
   min-height: 10vh;
   background-color: #0f0;
+  border-radius: 10px;
 }
 
-.seccion__carrusel__indicadores {
+.escenarios__cuerpo__carrusel__indicadores {
   width: 100%;
   flex-flow: row;
   justify-content: center;
@@ -173,16 +244,64 @@ body {
   display: flex;
 }
 
-.seccion__carrusel__indicadores--item {
+.escenarios__cuerpo__carrusel__indicadores--item {
   width: 2em;
   height: 2em;
-  background-color: #00f;
+  cursor: pointer;
+  filter: drop-shadow(0 0 .5rem #000);
+  background-color: #fff;
   border-radius: 50%;
   margin: .2em;
+  transition: all .5s;
+}
+
+.escenarios__cuerpo__carrusel__indicadores--item:hover {
+  background-color: #d38144;
 }
 
 .punto-activo {
-  background-color: #fff;
+  background-color: #984d14;
+}
+
+.escenarios__descripcion {
+  width: 150%;
+  color: #fff;
+  filter: drop-shadow(0 0 .75rem #000);
+  text-align: center;
+  justify-content: center;
+  margin: 0 0 1em;
+  font-size: 5rem;
+  display: flex;
+  position: absolute;
+}
+
+.final {
+  width: 100%;
+  background-color: #984d14;
+}
+
+.final__acordeon {
+  width: 90%;
+  max-width: 120em;
+  background-color: #0f0;
+  padding: 2em;
+}
+
+.final__acordeon__bloque {
+  background-color: red;
+  margin: 0 0 1em;
+  padding: 1em;
+}
+
+.final__acordeon__bloque--titulo {
+  background-color: #00f;
+  margin: 0 0 1em;
+  font-size: 4rem;
+}
+
+.final__acordeon__bloque--descripcion {
+  background-color: pink;
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=index.612141c4.css.map */
