@@ -12,26 +12,64 @@
     background-color: rgba(0,0,0, 0.4)
     color: white
     text-align: center
+    transition: all .5s ease
 
     // Referencia a la primera frase
     &__descripcion
         width: 70%
+        min-width: 300px
         font-size: 5rem
         font-weight: 800
         margin-top: 20rem
         filter: drop-shadow(5px 5px 0.2rem black)
+        transition: all .5s ease
+        line-height: 1.2
+
 
     // Referencia a la segunda frase
     &__catch
         width: 50%
+        min-width: 300px
         font-size: 4.5rem
         font-weight: 500
         margin-top: 5rem
+        margin-bottom: 10rem
         filter: drop-shadow(5px 5px 0.2rem black)
+        transition: all .5s ease
+
 
     // Referencia del logo
     &__logo
         width: 400px
         filter: drop-shadow(10px 10px 0.2rem black)
         margin-top: auto
-        margin-bottom: 10rem
+        margin-bottom: 20rem
+        transition: all .5s ease
+
+
+// Media queries
+@media screen and (max-width: 768px)
+    .inicio__info
+        &__descripcion
+            width: 90%
+            font-size: 4rem
+
+        &__catch
+            width: 90%
+            font-size: 3.5rem
+
+        &__logo
+            width: 300px
+
+@media screen and (max-width: 480px)
+    .inicio__info
+        &__descripcion
+            width: 90%
+            font-size: 3rem
+
+        &__catch
+            width: 90%
+            font-size: 2.5rem
+
+        &__logo
+            width: 200px

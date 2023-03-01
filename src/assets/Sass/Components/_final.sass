@@ -29,6 +29,7 @@
             margin-bottom: 2rem
             padding: 1em
             width: 60%
+            min-width: 450px
 
             // Referencia al titulo de cada bloque
             &--titulo
@@ -51,10 +52,10 @@
                 padding: 0
                 max-height: 0
                 overflow: hidden
-                transition: all .5s cubic-bezier(.68,-0.55,.27,1.55)
                 border-radius: 10px
                 display: flex
                 flex-direction: column
+                transition: all .5s ease
 
                 // Referencia a los a de la descripción
                 .enlace
@@ -93,3 +94,23 @@
     .final__acordeon__bloque--descripcion
         max-height: 500px
         padding: 2rem
+
+// Media queries
+@media screen and (max-width: 768px)
+    .final__acordeon
+        &__titulo
+            font-size: 4rem
+
+        &__bloque
+
+            &--titulo
+                font-size: 2.5rem
+
+            &--descripcion
+                font-size: 2.5rem
+
+                .enlace
+                    font-size: 1.5rem
+
+                &--sonido
+                    font-size: 2.5rem

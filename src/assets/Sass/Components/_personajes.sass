@@ -20,12 +20,17 @@
             color: white
             font-weight: 800
             filter: drop-shadow(5px 5px 0.2rem black)
+            transition: all .5s ease
 
         // Referencia de las tabs
         &__tabs
             width: 90%
             height: 50%
             padding: 1em
+            display: flex
+            flex-direction: column
+
+            align-items: center
 
             // Referencia al grupo de botones de las tabs
             &__botones
@@ -34,6 +39,7 @@
                 flex-flow: row nowrap
                 justify-content: space-evenly
                 align-items: center
+                min-width: 400px
 
                 // Referencia a cada botón de las tabs
                 &--boton
@@ -41,7 +47,7 @@
                     font-weight: 800
                     background-color: white
                     padding: 0.5em
-                    margin: 0 1em 0 0
+                    margin: 0 0 0 0
                     transition: all .5s ease
                     cursor: pointer
                     border-radius: 10px
@@ -57,11 +63,13 @@
                 display: flex
                 justify-content: center
                 align-items: center
+                min-width: 450px
+                width: 100%
 
                 // Referencia a cada una de las pestañas de las tabs
                 &--pestania
                     background-color: rgba(58, 58, 58, 0.7)
-                    width: fit-content
+                    width: 80%
                     margin-top: 2em
                     padding: 0.5em
                     position: absolute
@@ -80,16 +88,18 @@
                         grid-area: imagen
                         align-self: center
                         justify-self: center
-                        width: 50%
+                        width: 35rem
+                        transition: all .5s ease
 
                     // Referencia del texto dentro de la pestaña
                     &--info
-                        text-align: justify
+                        text-align: left
                         font-size: 2.5rem
                         color: white
                         font-weight: 600
                         padding: 0.5em
                         align-self: center
+                        transition: all .5s ease
 
 // Referencia al botón que ha recibido el click
 .button_active
@@ -102,3 +112,50 @@
 // Referencia a la pestaña que será mostrada con su correspondiente botón
 .tab_active
     opacity: 1
+
+// Media queries
+@media screen and (max-width: 1024px)
+    .personajes
+        &__info
+            font-size: 5rem
+
+            &__descripcion
+                margin-top: -20rem
+
+            &__tabs
+                &__botones
+                    &--boton
+                        font-size: 4rem
+
+                &__pestanias
+                    &--pestania
+                        display: grid
+                        grid-template-columns: 1fr
+                        grid-template-rows: 1fr 1fr
+                        gap: 0 0
+                        grid-template-areas: "imagen" "informacion"
+
+                        &--img
+                            width: 25rem
+
+                        &--info
+                            font-size: 2rem
+
+
+@media screen and (max-width: 768px)
+    .personajes
+        &__info
+            &__descripcion
+                font-size: 4rem
+                min-width: 400px
+
+            &__tabs
+                &__botones
+                    &--boton
+                        font-size: 3rem
+
+                &__pestanias
+                    &--pestania
+                        font-size: 1.5rem
+                        &--img
+                            width: 20rem
