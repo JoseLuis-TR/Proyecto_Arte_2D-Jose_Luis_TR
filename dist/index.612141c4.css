@@ -199,7 +199,7 @@ body {
 }
 
 .escenarios__cuerpo__descripcion {
-  filter: drop-shadow(0 0 .5rem #000);
+  filter: drop-shadow(0 0 .2rem #000);
   color: #fff;
   text-align: center;
   width: 60%;
@@ -230,7 +230,6 @@ body {
   width: calc(33.3333% - 2em);
   height: 100%;
   min-height: 10vh;
-  background-color: #0f0;
   border-radius: 10px;
 }
 
@@ -263,45 +262,101 @@ body {
   background-color: #984d14;
 }
 
-.escenarios__descripcion {
-  width: 150%;
-  color: #fff;
-  filter: drop-shadow(0 0 .75rem #000);
-  text-align: center;
+.final__acordeon {
+  max-width: 220rem;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0009;
+  flex-direction: column;
   justify-content: center;
-  margin: 0 0 1em;
-  font-size: 5rem;
+  align-items: center;
+  padding: 2rem;
   display: flex;
   position: absolute;
 }
 
-.final {
-  width: 100%;
-  background-color: #984d14;
-}
-
-.final__acordeon {
-  width: 90%;
-  max-width: 120em;
-  background-color: #0f0;
-  padding: 2em;
+.final__acordeon__titulo {
+  color: #fff;
+  text-align: center;
+  filter: drop-shadow(5px 5px .2rem #000);
+  margin-bottom: 1em;
+  font-size: 4rem;
+  font-weight: 800;
 }
 
 .final__acordeon__bloque {
-  background-color: red;
-  margin: 0 0 1em;
+  width: 60%;
+  margin-bottom: 2rem;
   padding: 1em;
 }
 
 .final__acordeon__bloque--titulo {
-  background-color: #00f;
-  margin: 0 0 1em;
-  font-size: 4rem;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 0 .5em;
+  padding: .2em;
+  font-size: 3rem;
+  transition: all .5s;
+}
+
+.final__acordeon__bloque--titulo:hover {
+  background-color: #d38144;
 }
 
 .final__acordeon__bloque--descripcion {
-  background-color: pink;
+  color: #fff;
+  max-height: 0;
+  background-color: #3a3a3ab3;
+  border-radius: 10px;
+  flex-direction: column;
+  padding: 0;
+  font-size: 3.5rem;
+  transition: all .5s cubic-bezier(.68, -.55, .27, 1.55);
+  display: flex;
+  overflow: hidden;
+}
+
+.final__acordeon__bloque--descripcion .enlace {
+  color: #fff;
   font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.final__acordeon__bloque--descripcion .enlace:hover {
+  text-decoration: underline;
+}
+
+.final__acordeon__bloque--descripcion--sonido {
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+  font-size: 3rem;
+  transition: all .5s;
+  display: flex;
+}
+
+.final__acordeon__bloque--descripcion--sonido:hover {
+  transform: scale(1.1);
+}
+
+.final__acordeon__bloque--descripcion--sonido audio {
+  width: 200px;
+  align-self: center;
+  margin: .5em 0;
+}
+
+.bloque_activo .final__acordeon__bloque--titulo {
+  color: #fff;
+  background-color: #984d14;
+}
+
+.bloque_activo .final__acordeon__bloque--descripcion {
+  max-height: 500px;
+  padding: 2rem;
 }
 
 /*# sourceMappingURL=index.612141c4.css.map */

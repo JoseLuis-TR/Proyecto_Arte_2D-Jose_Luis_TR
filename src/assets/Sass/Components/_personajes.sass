@@ -1,4 +1,8 @@
+// Archivo que da estilo a la sección de tabs de personajes
+
+// Referencia a la propia sección
 .personajes
+    // Referencia a tabs y titulo
     &__info
         position: absolute
         display: flex
@@ -11,23 +15,27 @@
         text-align: center
         font-size: 7rem
 
+        // Referencia al titulo de la sección
         &__descripcion
             color: white
             font-weight: 800
             filter: drop-shadow(5px 5px 0.2rem black)
 
+        // Referencia de las tabs
         &__tabs
             width: 90%
-            //background-color: yellow
             height: 50%
             padding: 1em
+
+            // Referencia al grupo de botones de las tabs
             &__botones
                 width: 100%
-                //background-color: violet
                 display: flex
                 flex-flow: row nowrap
                 justify-content: space-evenly
                 align-items: center
+
+                // Referencia a cada botón de las tabs
                 &--boton
                     font-size: 4rem
                     font-weight: 800
@@ -41,14 +49,16 @@
                 &--boton:hover
                     background-color: #d38144
 
+            // Referencia al grupo de pestañas de las tabs
             &__pestanias
                 min-height: 10vh
-                //background-color: cadetblue
                 position: relative
                 padding: 0.5em
                 display: flex
                 justify-content: center
                 align-items: center
+
+                // Referencia a cada una de las pestañas de las tabs
                 &--pestania
                     background-color: rgba(58, 58, 58, 0.7)
                     width: fit-content
@@ -61,16 +71,18 @@
                     display: grid
                     grid-template-columns: 1fr 1fr
                     grid-template-rows: 1fr
-                    gap: 0px 0px
+                    gap: 0 0
                     grid-template-areas: "imagen informacion"
                     border-radius: 10px
 
+                    // Referencia de la imagen dentro de la pestaña
                     &--img
                         grid-area: imagen
                         align-self: center
                         justify-self: center
                         width: 50%
 
+                    // Referencia del texto dentro de la pestaña
                     &--info
                         text-align: justify
                         font-size: 2.5rem
@@ -79,6 +91,7 @@
                         padding: 0.5em
                         align-self: center
 
+// Referencia al botón que ha recibido el click
 .button_active
     background-color: #984d14
     color: white
@@ -86,5 +99,6 @@
 .button_active:hover
     background-color: #703609
 
+// Referencia a la pestaña que será mostrada con su correspondiente botón
 .tab_active
     opacity: 1

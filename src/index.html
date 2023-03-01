@@ -9,6 +9,7 @@
 </head>
 <body>
     <main class="indexContainer">
+        <!-- Sección de inicio -->
         <article class="seccion inicio">
             <video class="seccion__backgroundVideo" autoplay="autoplay" muted loop playsinline>
                 <source src="assets/Videos/cueva-original_optimizado.mp4">
@@ -26,8 +27,11 @@
                         alt="Logo de Robo-Adventure">
             </section>
         </article>
+        <!-- Fin de sección de inicio -->
+        <!-- Sección de carrusel con escenarios -->
         <article class="seccion escenarios">
             <video class="seccion__backgroundVideo" autoplay="autoplay" muted loop playsinline>
+                <source src="assets/Videos/media_cavemp4.mp4">
                 <source src="assets/Videos/media_cave.webm">
             </video>
             <section class="escenarios__cuerpo">
@@ -75,9 +79,12 @@
                 </article>
             </section>
         </article>
+        <!-- Fin sección carrusel con escenarios -->
+        <!-- Sección tabs con personajes -->
         <article class="seccion personajes">
             <video class="seccion__backgroundVideo" autoplay="autoplay" muted loop playsinline>
-                <source src="assets/Videos/Vídeos_Tormenta_WEBM.webm">
+                <source src="assets/Videos/Tormenta_MP4.mp4">
+                <source src="assets/Videos/Tormenta_WEBM.webm">
             </video>
             <section class="personajes__info">
                 <h2 class="personajes__info__descripcion" >Conoce a los personajes de nuestra lluviosa historia</h2>
@@ -125,21 +132,70 @@
                 </section>
             </section>
         </article>
+        <!-- Fin de sección de tabs de personajes -->
+        <!-- Sección final con acordeón -->
         <article class="seccion final">
+            <video class="seccion__backgroundVideo" autoplay="autoplay" muted loop playsinline>
+                <source src="assets/Videos/final-Video.mp4">
+                <source src="assets/Videos/final-VideoWebm.webm">
+            </video>
             <section class="final__acordeon">
-                <!--<h2>¿Necesitas algo más de información?</h2>-->
+                <h2 class="final__acordeon__titulo">¿Necesitas algo más de información?</h2>
                 <article class="final__acordeon__bloque">
-                    <h3 class="final__acordeon__bloque--titulo">Titular 1</h3>
-                    <p class="final__acordeon__bloque--descripcion">Texto 1</p>
+                    <h3 class="final__acordeon__bloque--titulo">No me he enterado muy bien...¡dame una sinopsis!</h3>
+                    <section class="final__acordeon__bloque--descripcion">
+                        <p>
+                            En nuestra historia existe un pueblo de robots el cual ha sido castigado por un mago elemental.<br>
+                            Este ha hecho que no deje de llover, por lo que todos los robots se han oxidado y no se pueden mover...excepto uno.<br>
+                            El único capaz de salvarse ha sido nuestro héroe, el cual ha conseguido sobrevivir gracias a su paraguas.<br>
+                            Ahora, este deberá de encontrar al culpable de la lluvia y pararle los pies.
+                        </p>
+                    </section>
                 </article>
                 <article class="final__acordeon__bloque">
-                    <h3 class="final__acordeon__bloque--titulo">Titular 2</h3>
-                    <p class="final__acordeon__bloque--descripcion">Texto 2</p>
+                    <h3 class="final__acordeon__bloque--titulo">¿Y donde podré encontrarlo?</h3>
+                    <section class="final__acordeon__bloque--descripcion">
+                        <p>
+                            Podrás encontrar nuestro juego en diferentes plataformas como <a href="https://store.steampowered.com/?l=spanish" target="_blank" class="enlace">Steam</a>, <a href="https://store.epicgames.com/es-ES/" target="_blank" class="enlace">Epic Games Store</a> e <a href="https://itch.io/" target="_blank" class="enlace">Itch.io</a>.
+                        </p>
+                    </section>
+                </article>
+                <article class="final__acordeon__bloque">
+                    <h3 class="final__acordeon__bloque--titulo">¿Algún avance de la música y sonidos?</h3>
+                    <section class="final__acordeon__bloque--descripcion">
+                        <p>
+                            ¡Por supuesto! Aquí tienes un pequeño avance de la música y sonidos que podrás encontrar en nuestro juego.<br>
+                            Te recomendamos que escuches los distintos sonidos mientras revisas de nuevo la web ;).
+                        </p>
+                        <article class="final__acordeon__bloque--descripcion--sonido">
+                            <p>Experimenta la atmósfera del poblado</p>
+                            <audio class="audioWeb" controls>
+                                <source src="assets/Audios/Sonidos_GloomyRain_MP3.mp3" type="audio/mp3">
+                                <source src="assets/Audios/Sonidos_GloomyRain_AAC.aac" type="audio/aac">
+                            </audio>
+                        </article>
+                        <article class="final__acordeon__bloque--descripcion--sonido">
+                            <p>Disfruta de la ambientación de la cueva</p>
+                            <audio class="audioWeb" controls>
+                                <source src="assets/Audios/music_boss_room_original.mp3" type="audio/mp3">
+                                <source src="assets/Audios/music_boss_room_aac.aac" type="audio/aac">
+                            </audio>
+                        </article>
+                        <article class="final__acordeon__bloque--descripcion--sonido">
+                            <p>No olvides que estarás rodeado de mucha agua...</p>
+                            <audio class="audioWeb" controls>
+                                <source src="assets/Audios/cascada_cueva_mp3.mp3" type="audio/mp3">
+                                <source src="assets/Audios/cascada_cueva_aac.aac" type="audio/aac">
+                            </audio>
+                        </article>
+                    </section>
                 </article>
             </section>
         </article>
+        <!-- Fin sección final con acordeón -->
     </main>
 </body>
 <script src="./scripts/tabs.js"></script>
 <script src="./scripts/carrusel.js"></script>
+<script src="./scripts/acordeon.js"></script>
 </html>
